@@ -1,0 +1,169 @@
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: start;
+    width: 50vw;
+    height:100vh;
+    margin: 0 auto;
+}
+
+.hero-welcome{
+    color: #dee2e6;
+    font-size: 20px;
+    border: 1px solid #dee2e6;
+    padding: 10px;
+}
+
+.hero-hi-section {
+    color: #fff;
+    font-weight: bolder;
+    font-size: 64px;
+    margin: 6px 0 16px 0;
+}
+
+.hero-description {
+    color: #dee2e6;
+    font-size: 24px;
+}
+
+.hero-connect-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 12px
+}
+
+.hero-connect-text {
+    color:#fff;
+    font-weight: bolder;
+    transition: all 0.2s ease-in-out;
+}
+
+.hero-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    background-color: transparent;
+    border: transparent;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.hero-connect-text:hover {
+    transform: scale(1.1);
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+.hero-arrow:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+
+
+/* ------------------------------------------ */
+
+@media (max-width: 1280px) {
+    .hero-welcome {
+        font-size: 14px;
+    }
+
+    .hero-hi-section {
+        font-size: 60px;
+    }
+
+    .hero-description{
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .hero-welcome {
+        font-size: 12px;
+    }
+
+    .hero-hi-section {
+        font-size: 54px;
+    }
+
+    .hero-description{
+        font-size: 18px;
+    }
+    .hero-connect-box{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 950px) {
+
+    .hero-hi-section {
+        font-size: 48px;
+    }
+
+    .hero-description{
+        font-size: 16px;
+    }
+
+    .hero-connect-text {
+        font-size: 14px;
+    }
+
+    .hero-arrow {
+        font-size: 18px;
+    }
+
+    .hero-connect-box{
+        margin-top: 25px;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .hero-hi-section {
+        font-size: 42px;
+    }
+
+    .hero-description{
+        font-size: 14px;
+    }
+
+    .hero-connect-text {
+        font-size: 12px;
+    }
+
+    .hero-arrow {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .hero-hi-section {
+        font-size: 38px;
+    }
+
+    .hero-description{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 450px) {
+    .hero-welcome {
+        font-size: 10px;
+    }
+
+    .hero-hi-section {
+        font-size: 34px;
+    }
+
+    .hero-description{
+        font-size: 12px;
+    }
+}

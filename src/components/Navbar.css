@@ -1,0 +1,161 @@
+
+#nav {
+    background-color: rgb(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 16px 0;
+}
+
+.nav-logo {
+    color: #fff;
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu-home,
+.nav-menu-skills,
+.nav-menu-projects {
+    background-color: transparent;
+    border: transparent;
+    color: #dee2e6;
+    font-weight: bolder;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-menu-home:hover,
+.nav-menu-skills:hover,
+.nav-menu-projects:hover {
+    color: #a6836f;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.nav-socials {
+    display: flex;
+    gap: 5px;
+}
+
+.nav-linkedIn,
+.nav-github {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #dee2e6;
+    border-radius: 50%;
+    border: 1px solid #dee2e6;
+    padding: 9px 9px;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-linkedIn:hover,
+.nav-github:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+.nav-button-connect {
+    padding: 9px 18px;
+    background-color: transparent;
+    color: #dee2e6;
+    border: 1px solid #dee2e6;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.nav-button-connect:hover {
+    background-color: #dee2e6;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Mobile navigation */
+
+.mobile-nav {
+    display: none;
+}
+
+.mobile-nav-toggle {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+.mobile-nav-menu {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+.mobile-nav-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-nav-menu li {
+    margin-bottom: 10px;
+}
+
+.mobile-nav-menu li button {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(166, 131, 111, 0.9);
+    color: #fff;
+    font-size: 16px;
+    border: transparent;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+  }
+
+.mobile-nav-menu .lets-connect {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255, 0.9);
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* ------------------------------- */
+
+@media (max-width: 704px) {
+
+    .mobile-nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 16px 0;
+        z-index: 1000;
+        background-color: rgb(0, 0, 0, 0.5);
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-button-connect {
+        display: none;
+    }
+
+
+
+}
