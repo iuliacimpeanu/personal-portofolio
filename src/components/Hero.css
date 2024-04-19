@@ -144,6 +144,9 @@
 }
 
 @media (max-width: 650px) {
+    #hero {
+        width: 60vw;
+    }
 
     .hero-hi-section {
         font-size: 38px;
@@ -155,6 +158,10 @@
 }
 
 @media (max-width: 450px) {
+    #hero {
+        width: 70vw;
+    }
+
     .hero-welcome {
         font-size: 10px;
     }
