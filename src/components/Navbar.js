@@ -18,7 +18,7 @@ const Navbar = () => {
     }
 
     return (
-        <div>
+        <div className='navigation'>
             <div id="nav" className={isMobileMenuOpen ? 'hide-on-mobile' : '' }>
                 <div className="nav-logo">LOGO</div>
                 <ul className="nav-menu">
