@@ -3,7 +3,7 @@ import './Navbar.css'
 
 
 const Navbar = () => {
-    const scrollToSection = (id, offset=60) => {
+    const scrollToSection = (id, offset=100) => {
         const element = document.getElementById(id);
         if (element) {
             const offsetPosition = element.offsetTop - offset;
